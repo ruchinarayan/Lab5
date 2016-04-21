@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://com" xmlns:intf="http://com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="convertMilesToKilometers">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertMilesToKilometersResponse">
+    <complexType>
+     <sequence>
+      <element name="convertMilesToKilometersReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertFeetToMiles">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertFeetToMilesResponse">
+    <complexType>
+     <sequence>
+      <element name="convertFeetToMilesReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertWeeksToYears">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertWeeksToYearsResponse">
+    <complexType>
+     <sequence>
+      <element name="convertWeeksToYearsReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertInchesToFeet">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertInchesToFeetResponse">
+    <complexType>
+     <sequence>
+      <element name="convertInchesToFeetReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertInchesToCentimeter">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertInchesToCentimeterResponse">
+    <complexType>
+     <sequence>
+      <element name="convertInchesToCentimeterReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertFeetToMeter">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertFeetToMeterResponse">
+    <complexType>
+     <sequence>
+      <element name="convertFeetToMeterReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertDaysToMonths">
+    <complexType>
+     <sequence>
+      <element name="value" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="convertDaysToMonthsResponse">
+    <complexType>
+     <sequence>
+      <element name="convertDaysToMonthsReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="convertDaysToMonthsResponse">
+
+      <wsdl:part element="impl:convertDaysToMonthsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertMilesToKilometersResponse">
+
+      <wsdl:part element="impl:convertMilesToKilometersResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertInchesToCentimeterResponse">
+
+      <wsdl:part element="impl:convertInchesToCentimeterResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertFeetToMilesResponse">
+
+      <wsdl:part element="impl:convertFeetToMilesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertInchesToFeetResponse">
+
+      <wsdl:part element="impl:convertInchesToFeetResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertDaysToMonthsRequest">
+
+      <wsdl:part element="impl:convertDaysToMonths" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertInchesToFeetRequest">
+
+      <wsdl:part element="impl:convertInchesToFeet" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertMilesToKilometersRequest">
+
+      <wsdl:part element="impl:convertMilesToKilometers" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertInchesToCentimeterRequest">
+
+      <wsdl:part element="impl:convertInchesToCentimeter" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertFeetToMeterResponse">
+
+      <wsdl:part element="impl:convertFeetToMeterResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertFeetToMeterRequest">
+
+      <wsdl:part element="impl:convertFeetToMeter" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertWeeksToYearsRequest">
+
+      <wsdl:part element="impl:convertWeeksToYears" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertFeetToMilesRequest">
+
+      <wsdl:part element="impl:convertFeetToMiles" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="convertWeeksToYearsResponse">
+
+      <wsdl:part element="impl:convertWeeksToYearsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ConversionServlet">
+
+      <wsdl:operation name="convertMilesToKilometers">
+
+         <wsdl:input message="impl:convertMilesToKilometersRequest" name="convertMilesToKilometersRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertMilesToKilometersResponse" name="convertMilesToKilometersResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertFeetToMiles">
+
+         <wsdl:input message="impl:convertFeetToMilesRequest" name="convertFeetToMilesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertFeetToMilesResponse" name="convertFeetToMilesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertWeeksToYears">
+
+         <wsdl:input message="impl:convertWeeksToYearsRequest" name="convertWeeksToYearsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertWeeksToYearsResponse" name="convertWeeksToYearsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertInchesToFeet">
+
+         <wsdl:input message="impl:convertInchesToFeetRequest" name="convertInchesToFeetRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertInchesToFeetResponse" name="convertInchesToFeetResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertInchesToCentimeter">
+
+         <wsdl:input message="impl:convertInchesToCentimeterRequest" name="convertInchesToCentimeterRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertInchesToCentimeterResponse" name="convertInchesToCentimeterResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertFeetToMeter">
+
+         <wsdl:input message="impl:convertFeetToMeterRequest" name="convertFeetToMeterRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertFeetToMeterResponse" name="convertFeetToMeterResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertDaysToMonths">
+
+         <wsdl:input message="impl:convertDaysToMonthsRequest" name="convertDaysToMonthsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:convertDaysToMonthsResponse" name="convertDaysToMonthsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ConversionServletSoapBinding" type="impl:ConversionServlet">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="convertMilesToKilometers">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertMilesToKilometersRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertMilesToKilometersResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertFeetToMiles">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertFeetToMilesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertFeetToMilesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertWeeksToYears">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertWeeksToYearsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertWeeksToYearsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertInchesToFeet">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertInchesToFeetRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertInchesToFeetResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertInchesToCentimeter">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertInchesToCentimeterRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertInchesToCentimeterResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertFeetToMeter">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertFeetToMeterRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertFeetToMeterResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="convertDaysToMonths">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="convertDaysToMonthsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="convertDaysToMonthsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ConversionServletService">
+
+      <wsdl:port binding="impl:ConversionServletSoapBinding" name="ConversionServlet">
+
+         <wsdlsoap:address location="http://localhost:8080/Lab5New/services/ConversionServlet"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
